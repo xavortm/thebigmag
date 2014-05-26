@@ -1,0 +1,32 @@
+/**
+ * Edior styles for the shortcodes picker.
+ * ----------------------------------------------
+ */
+
+/* Root (button class) */
+.mce_thebigmag_button {
+
+}
+
+#menu_content_content_thebigmag_button_menu_tbl,
+.mceSplitButtonMenu .mceMenu table {
+	background: white;
+	border-bottom: 3px solid #EB643B;
+	padding: 5px;
+}
+
+.tbm_themeSkin .mceMenu span.mceText, 
+.tbm_themeSkin .mceMenu .mcePreview { font-size: 14px; }
+
+.tbm_themeSkin tr, 
+.tbm_themeSkin td { padding: 5px 0 ; }
+
+#menu_content_content_thebigmag_button_menu_tbl table .mceMenuActive ,
+.mceSplitButtonMenu .mceMenu table .mceMenuActive {
+	background: #EB643B;
+	color: white;
+}
+
+.mceSplitButtonMenu,
+.tbm_themeSkin,
+.mceNoIcons { margin-left: 7px; margin-top: -4px; }

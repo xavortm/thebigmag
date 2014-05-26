@@ -1,0 +1,10 @@
+body#tinymce.wp-editor { 
+    font-family: Georgia, "Times New Roman", sans-serif; 
+    margin: 40px auto; 
+    max-width: 810px;
+    font-size: 20px;
+}
+
+body#tinymce.wp-editor a {
+    color: #4CA6CF;
+}

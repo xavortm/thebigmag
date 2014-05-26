@@ -1,0 +1,658 @@
+/*
+ * Standart styling
+ * ------------------------------------------------------ 
+ * Helper classes for styling the shortcodes + regular ones
+ * that can be used on normal content.
+ * */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+
+/*
+ * Style columns.
+ * ------------------------------------------------------ 
+ * Only precentage were used, so that the sizes will fit 
+ * perfectly in any content width. 
+ * */
+
+.tbm-row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.tbm-row .one-half { 
+	width: 48%; 
+}
+
+.tbm-row  .one-third { 
+	width: 30.6666%; 
+}
+
+.tbm-row  .two-third { 
+	width: 65.3332%; 
+}
+
+.tbm-row  .one-fourth { 
+	width: 22%; 
+}
+
+.tbm-row  .three-fourth { 
+	width: 74%; 
+}
+
+.tbm-row  .one-fifth {
+	width: 16.8%; 
+}
+
+.tbm-row  .two-fifth { 
+	width: 37.6%; 
+}
+
+.tbm-row  .three-fifth { 
+	width: 58.4%; 
+}
+
+.tbm-row  .four-fifth { 
+	width: 79.2%; 
+}
+
+.tbm-row  .one-sixth {
+	width: 13.3333%; 
+}
+
+.tbm-row  .two-sixth {
+	width: 30.6666%; 
+}
+
+.tbm-row  .three-sixth {
+	width: 47.9998%; 
+}
+
+.tbm-row  .four-sixth {
+	width: 65.3332%; 
+}
+
+.tbm-row  .five-sixth {
+	width: 82.6665%;
+}
+
+
+.tbm-row .one-half, 
+.tbm-row .one-third, 
+.tbm-row .two-third, 
+.tbm-row .one-fourth, 
+.tbm-row .three-fourth, 
+.tbm-row .one-fifth, 
+.tbm-row .two-fifth, 
+.tbm-row .three-fifth, 
+.tbm-row .four-fifth, 
+.tbm-row .one-sixth, 
+.tbm-row .five-sixth { 
+	position: relative; 
+	margin-right: 4%; 
+	float: left; 
+	min-height: 1px;
+}
+
+.tbm-row .tbm-column-last { margin-right: 0; }
+
+/*
+ * Message boxes
+ * ------------------------------------------------------ 
+ * This is the default design of the boxes.
+ * */
+.tbm-msgbox {
+	color:#555;
+	padding: 10px 30px 10px 13px;
+	display: block;
+	margin: 20px 0;
+	border-radius: 3px;
+}
+
+.tbm-msgbox .msgbox-content:last-child {
+	margin-bottom: 0;
+}
+
+.tbm-msgbox i {
+	margin-right: 8px;
+}
+
+.tbm-msgbox.msgbox-doc {	background: #e3f7fc; }
+.tbm-msgbox.msgbox-error { background: #fcb8b8; }
+.tbm-msgbox.msgbox-download { background: #acd7a4; }
+.tbm-msgbox.msgbox-help { background: #96e4e9; }
+.tbm-msgbox.msgbox-info { background: #6dc8fc; }
+.tbm-msgbox.msgbox-media { background: #ffda93; }
+.tbm-msgbox.msgbox-new { background: #faefa4; }
+.tbm-msgbox.msgbox-note { background: #8ce8e3; }
+.tbm-msgbox.msgbox-success { background: #a2f0b1; }
+.tbm-msgbox.msgbox-warning { background: #e48080; }
+
+/**	
+ * List
+ * ------------------------------------------------------
+ * We will remove the list style for custom lists and add
+ * custom font-awesome icons, the ones that the user picks.
+ */
+.tbm-list li {
+	list-style: none;
+}
+
+.tbm-list li i {
+	margin-right: 8px;
+}
+
+.tbm-list.color-red li i { color: #f46565; }
+.tbm-list.color-green li i { color: #38d638; }
+.tbm-list.color-blue li i { color: #29a1fe; }
+.tbm-list.color-orange li i { color: #29a1fe; }
+.tbm-list.color-brown li i { color: #29a1fe; }
+.tbm-list.color-gray li i { color: #29a1fe; }
+.tbm-list.color-blue li i { color: #29a1fe; }
+
+/**	
+ * Buttons
+ * ------------------------------------------------------
+ * More about the buttons styles can be found in PANEL section
+ * as there is set the shaded buttons state.
+ */
+
+.tbm-button {
+	text-decoration: none;
+	padding: 7px 15px;
+	color: white;
+
+	/* IE7 inline-block hack */
+	display: inline-block;
+	*display: inline;
+
+	margin: 5px;
+	font-size: 14px;
+	line-height: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+
+	background: #e05d22; /* Old browsers */
+	background: -webkit-linear-gradient(top, #e05d22 0%, #d94412 100%); /* Chrome 10+, Safari 5.1+ */
+	background:   linear-gradient(to bottom, #e05d22 0%, #d94412 100%); /* W3C */
+	border: none;
+	border-bottom: 3px solid #b93207;
+	border-radius: 2px;
+	color: #fff !important;
+	display: inline-block;
+	padding: 9px 20px 8px;
+	text-decoration: none;
+}
+
+.tbm-button i {
+	margin-left: -2px;
+	margin-right: 5px;
+}
+
+.tbm-button:hover {
+	opacity: 0.8;
+	text-decoration: none !important;
+	cursor: pointer;
+	color: white;
+}
+
+.tbm-button.size-small { padding: 3px 10px; font-size: 12px;}
+.tbm-button.size-medium { padding: 7px 18px; font-size: 14px; font-weight: bold; }
+.tbm-button.size-big { padding: 10px 20px; font-size: 16px; font-weight: bold; }
+
+.tbm-button.button-white,
+.tbm-button.button-white.shaded:active { 
+	color: #999999 !important; 
+	background: #FFFFFF; 
+	border: 1px solid #e5e5e5;
+	border-bottom: 3px solid #e0e0e0; 
+}
+
+.tbm-button.button-red,
+.tbm-button.button-red.shaded:active { 
+	background: #fe7272;  
+	border-bottom: 3px solid #F26161;
+}
+
+.tbm-button.button-blue, 
+.tbm-button.button-blue.shaded:active { 
+	background: #00a2ff;  
+	border-bottom: 3px solid #138ACF;
+}
+
+.tbm-button.button-orange,
+.tbm-button.button-orange.shaded:active { 
+	background: #ff7f1a;  
+	border-bottom: 3px solid #D96E1A;
+}
+
+.tbm-button.button-black,
+.tbm-button.button-black.shaded:active { 
+	background: #393939;  
+	border-bottom: 3px solid #212121;
+}
+
+.tbm-button.button-green,
+.tbm-button.button-green.shaded:active { 
+	background: #36e146;  
+	border-bottom: 3px solid #27CC36;
+}
+
+.tbm-button.button-magenta,
+.tbm-button.button-magenta.shaded:active { 
+	background: #eb3899;  
+	border-bottom: 3px solid #D11F80;
+}
+
+.tbm-button.button-red:visited,		
+.tbm-button.button-blue:visited, 		
+.tbm-button.button-orange:visited,	
+.tbm-button.button-black:visited, 	
+.tbm-button.button-green:visited, 	
+.tbm-button.button-magenta:visited { color: white; }	
+.tbm-button.button-white:visited { color: #999; }
+
+/**	
+ * Highlights
+ * ------------------------------------------------------
+ */
+.tbm-highlight.tbm-highlight-blue { background: #a3dffe; }
+.tbm-highlight.tbm-highlight-red 	{ background: #fa8a8a; }
+.tbm-highlight.tbm-highlight-green { background: #74ee88; }
+.tbm-highlight.tbm-highlight-orange { background: #ffb38a; }
+.tbm-highlight.tbm-highlight-yellow { background: #ffffaa; }
+
+/**	
+ * Slider
+ * ------------------------------------------------------
+ */
+ 
+.tbm-slider { 
+	position: relative; 
+	overflow: hidden; 
+	border: 1px solid red;
+	padding-bottom: 50px;
+	border: 3px solid #f0f0f0;
+	box-shadow: inset 0px 0px 1px #555;
+}
+
+.tbm-slider .tbm-slider-holder { 
+	list-style: none; 
+	padding: 0; 
+	margin: 0; 	
+}
+
+.tbm-slider .tbm-slider-item { 
+	float: left; 
+	width: 100%; 
+}
+
+.tbm-slider .dots {
+	bottom: 8px;
+	display: inline-block;
+	left: 45%;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 0;
+	padding: 0px 10px;
+	border-radius: 8px;
+}
+.tbm-slider .dots li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 4px;
+
+	text-indent: -999em;
+
+	border: 2px solid #fff;
+	border-radius: 6px;
+
+	cursor: pointer;
+	opacity: .4;
+
+	-webkit-transition: background .5s, opacity .5s;
+	-moz-transition: background .5s, opacity .5s;
+	transition: background .5s, opacity .5s;
+}
+
+.tbm-slider .dots li.active {
+	background: #fff;
+	opacity: 1;
+}
+
+/**	
+ * Tabs
+ * ------------------------------------------------------
+ */
+.tbm-tabs {
+	border: 3px solid #f0f0f0;
+	box-shadow: inset 0px 0px 1px #555;
+}
+
+.tbm-tabs ul.ui-tabs-nav {
+	border-bottom: 1px solid #f0f0f0;
+	margin: 1px;
+	padding: 0;
+}
+
+.tbm-tabs ul.ui-tabs-nav li {
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.tbm-tabs ul.ui-tabs-nav li .ui-tabs-anchor {
+	font-weight: bold;
+	font-size: 13px;
+	text-decoration: none;
+	padding: 4px 40px;
+	color: #777;
+	display: table-cell;
+	border-left: 1px solid #eee;
+}
+
+.tbm-tabs ul.ui-tabs-nav li:last-child .ui-tabs-anchor {
+	border-right: 1px solid #eee;
+}
+
+.tbm-tabs ul.ui-tabs-nav li.ui-tabs-active a.ui-tabs-anchor {
+	border-bottom: 2px solid #FF5D05;
+	outline: none;
+}
+
+.tbm-tabs .tab-content {
+	padding: 20px;
+}
+
+/**	
+ * Panels
+ * ------------------------------------------------------
+ */
+.tbm-panel { 
+	display: block; 
+	background: #f0f0f0;
+	padding: 15px;
+	margin: 20px 0;
+}
+
+.tbm-panel::selection {
+	background: black;
+	color: white;
+}
+
+.tbm-panel p:first-child {
+	margin-top: 0;
+}
+
+.tbm-panel p:last-child {
+	margin-bottom: 0;
+}
+
+.tbm-panel.flat.blue {
+	background: #0096ff;
+	color: white;
+	border-bottom: 3px solid #168bdc;
+}
+
+.tbm-panel.flat.orange {
+	background: #ff6c00;
+	border-bottom: 3px solid #ff5400;
+	color:  white;
+}
+
+.tbm-panel.flat.green {
+	background: #28df1a;
+	border-bottom: 3px solid #22d814;
+	color:  white;
+}
+
+.tbm-panel.flat.red {
+	background: #FF706C;
+	color: white;
+	border-bottom: 3px solid #F2625E;
+}
+
+.tbm-panel.flat.magenta {
+	background: #ea3787;
+	border-bottom: 3px solid #dd2b7b;
+	color:  white;
+}
+
+.tbm-panel.flat.black {
+	background: #333333;
+	border-bottom: 3px solid #222222;
+	color:  white;
+}
+
+.tbm-panel.flat.white {
+	background: #ffffff;
+	border: 1px solid #f0f0f0;
+	color:  #555;
+}
+
+.tbm-panel.shaded,
+.tbm-button.shaded,
+.tbm-label.shaded {
+	font-weight: normal;
+	font-size: 14px;
+	border-radius: 5px;
+	box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+.tbm-button.shaded:active {
+	margin-bottom: 3px;
+}
+
+.tbm-panel.shaded.blue,
+.tbm-button.shaded.button-blue,
+.tbm-label.shaded.tbm-label-blue {
+	color: white;
+	border-bottom: 3px solid #168bdc;
+	border: 1px solid #258dc8;
+	background: #279dd1;
+	background: linear-gradient(#3aa0db, #2281b7);
+}
+
+.tbm-panel.shaded.red,
+.tbm-button.shaded.button-red ,
+.tbm-label.shaded.tbm-label-red {
+	color: white;
+	background: #ff3019;
+	background: linear-gradient(#ff3019, #cf0404);
+	border: 1px solid #cf0404;
+}
+
+.tbm-panel.shaded.green,
+.tbm-label.shaded.tbm-label-green {
+	color: white;
+	background: #cdeb8e;
+	background: linear-gradient(#cdeb8e, #a5c956);
+	border: 1px solid #a5c956;
+}
+
+.tbm-button.shaded.button-green {
+	color: white;
+	background: #cdeb8e;
+	background: linear-gradient(#00C942, #008A0A);
+	border: 1px solid #08740F;
+}
+
+.tbm-panel.shaded.orange,
+.tbm-button.shaded.button-orange,
+.tbm-label.shaded.tbm-label-orange {
+	color: white;
+	background: #ffaf4b;
+	background: linear-gradient(#ffaf4b, #fc7f0a);
+	border: 1px solid #fc7f0a;
+}
+
+.tbm-panel.shaded.magenta,
+.tbm-button.shaded.button-magenta ,
+.tbm-label.shaded.tbm-label-magenta {
+	color: white;
+	background: #ea3787;
+	background: linear-gradient(#ea3787, #d32a65);
+	border: 1px solid #d32a65;
+}
+
+.tbm-panel.shaded.black,
+.tbm-button.shaded.button-black,
+.tbm-label.shaded.tbm-label-black {
+	color: white;
+	background: #7d7e7d;
+	background: linear-gradient(#7d7e7d, #0e0e0e);
+	border: 1px solid #0e0e0e;
+}
+
+.tbm-panel.shaded.white,
+.tbm-button.shaded.button-white,
+.tbm-label.shaded.tbm-label-white {
+	color: #333;
+	background: #fafafa;
+	background: linear-gradient(#fafafa, #e9e9e9);
+	border: 1px solid #ddd;
+}
+
+.tbm-label {
+	color: white;
+	padding: 0px 5px;
+	font-size: 13px;
+	margin: 0 3px;
+}
+
+.tbm-label.rounded { 
+	border-radius: 7px; 
+}
+
+.tbm-label.tbm-label-default { 
+	color: #fff; 
+	background: #ccc; 
+}
+
+.tbm-label.tbm-label-white { 
+	color: #999999; 
+	background: #FFFFFF; 
+	border: 1px solid #e5e5e5;
+}
+
+.tbm-label.tbm-label-red { 
+	background: #fe7272;  
+}
+
+.tbm-label.tbm-label-blue { 
+	background: #00a2ff;  
+}
+
+.tbm-label.tbm-label-orange { 
+	background: #ff7f1a;  
+}
+
+.tbm-label.tbm-label-black { 
+	background: #393939;  
+}
+
+.tbm-label.tbm-label-green { 
+	background: #36e146;  
+}
+
+.tbm-label.tbm-label-magenta { 
+	background: #eb3899;  
+}
+
+/**	
+ * Spoilers
+ * ------------------------------------------------------
+ */
+
+.tbm-spoiler,
+.tbm-spoiler a { color: transparent; text-shadow: 0 0 8px rgba(0,0,0,0.5); }
+
+.tbm-spoiler:hover,
+.tbm-spoiler:hover a { 
+	color: #444; 
+	background: transparent; 
+	text-shadow: none;
+}
+
+/**	
+ * Separator
+ * ------------------------------------------------------
+ */
+
+.tbm-separator { 
+	display: block; 
+	width: 100%; 
+	clear: both;
+	overflow: hidden;
+	height: 1px;
+}
+
+.tbm-separator.small {
+	margin: 10px 0;
+}
+
+.tbm-separator.medium {
+	margin: 20px 0;
+}
+
+.tbm-separator.big {
+	margin: 30px 0;
+}
+
+.tbm-separator.huge {
+	margin: 40px 0;
+}
+
+.tbm-separator.line {
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.tbm-separator.double-line {
+	border-bottom: 4px double #ededed
+}
+
+.tbm-separator.shadow-1 {
+	height: 32px;
+	background: url("../img/shadow-1.png") no-repeat center center;
+	max-width: 765px;
+}
+
+/**	
+ * Dropcap
+ * ------------------------------------------------------
+ */
+
+.tbm-dropcap {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 4em;
+	float: left;
+	line-height: 1em;
+	padding: 0 25px 5px 20px;
+}
+
+.tbm-dropcap.square {
+	background: #565656;
+	color: white;
+	padding: 5px 20px;
+	margin: 5px 30px 5px 0;
+}
+
+.tbm-dropcap.circle {
+	background: #565656;
+	color: white;
+	padding: 5px 20px;
+	margin: 5px 30px 5px 0;
+	border-radius: 50%;
+}
